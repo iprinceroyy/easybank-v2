@@ -22,6 +22,7 @@ document.addEventListener(
     () => {
         if (navMenu.classList.contains("show")) {
             navMenu.classList.remove("show");
+            icon.src = "assets/images/icon-hamburger.svg";
         }
     }, { passive: true }
 );
