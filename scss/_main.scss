@@ -109,9 +109,9 @@
         height: 12.3125rem;
         object-fit: cover;
     }
-    div {
+    blockquote {
         padding: 1.5rem;
-        figcaption {
+        .caption {
             font-size: 1rem;
             color: var.$grayish-blue;
         }
