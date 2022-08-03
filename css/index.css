@@ -354,28 +354,28 @@
   height: 12.3125rem;
   object-fit: cover;
 }
-.blog blockquote {
+.blog div {
   padding: 1.5rem;
 }
-.blog blockquote figcaption {
+.blog div figcaption {
   font-size: 1rem;
   color: #9698a6;
 }
-.blog blockquote h3 {
+.blog div h3 {
   color: #2d314d;
   font-weight: 400;
   padding-right: 4%;
   margin: 0.5rem 0;
 }
-.blog blockquote h3:hover {
+.blog div h3:hover {
   color: rgba(49, 211, 92, 0.7);
   cursor: pointer;
 }
-.blog blockquote h3:active {
+.blog div h3:active {
   color: #31d35c;
   cursor: pointer;
 }
-.blog blockquote p {
+.blog div p {
   font-size: 1rem;
   color: #9698a6;
   margin: 0.5rem 0;
