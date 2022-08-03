@@ -4,8 +4,7 @@ const navMenu = document.querySelector(".nav-menu");
 
 let navIsToggled = false;
 
-btn.addEventListener('click', () => {
-
+btn.addEventListener("click", () => {
     if (!navIsToggled) {
         icon.src = "assets/images/icon-close.svg";
         navMenu.classList.add("show");
@@ -14,6 +13,15 @@ btn.addEventListener('click', () => {
         icon.src = "assets/images/icon-hamburger.svg";
     }
 
-    navIsToggled = navIsToggled ? false : true;
-
+    navIsToggled = !navIsToggled;
 });
+
+// Close navigation on scroll if it is opened
+document.addEventListener(
+    "scroll",
+    () => {
+        if (navMenu.classList.contains("show")) {
+            navMenu.classList.remove("show");
+        }
+    }, { passive: true }
+);
