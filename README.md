@@ -9,10 +9,7 @@
 -   [Process](#process)
     -   [Built with](#built-with)
     -   [Useful resources](#useful-resources)
--   [Contribution](#contributing-to-bookmark-landing-page)
-    -   [Issue](#issue)
-    -   [Contributing Guidelines](#contributing-guidelines)
--   [Contributors](#contributors)
+-   [Author](#author)
 
 ## Overview
 
@@ -36,7 +33,7 @@ Users should be able to:
 
 ## Process
 
-### Built withgit 
+### Built with
 
 -   Semantic HTML5 markup
 -   CSS custom properties
@@ -51,25 +48,6 @@ Users should be able to:
 -   [W3Schools](https://www.w3schools.com/) - Helpful for beginners.
 -   [FreeCodeCamp](https://www.freecodecamp.org/) - Huge tutorials related to CS.
 
-## Contributing to Bookmark Landing Page
+## Author
 
-Welcomes you all to contribute to this project
-
-### Issue
-
-Feel free to submit issues and enhancement request
-
-### Contributing Guidelines
-
-In general, we follow the 'fork-and-pull' Git Workflow
-
-1. **Fork** the repo on github
-2. **Clone** the project to your local machine
-3. Create separate branch with title 'yourname/dev'
-4. **Commit** the changes to your own branch
-5. **Push** your work back upto your fork
-6. Submit a **pull request** so that we can review your changes
-
-NOTE: be sure to merge the latest from "upstream" before making a pull request!
-
-## Contributors
+-   [Twitter](https://www.twitter.com/@prince_popups)

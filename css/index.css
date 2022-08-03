@@ -194,6 +194,7 @@
   }
 }
 
+/* Title division */
 .intro .title {
   padding-right: max(8vw, 2rem);
   text-align: center;
@@ -405,6 +406,7 @@
   filter: contrast(1) invert(1) hue-rotate(190deg) brightness(2);
 }
 
+/* Socials logo */
 .socials {
   display: flex;
   flex-direction: row;
@@ -420,6 +422,7 @@
   filter: sepia(1) saturate(20) contrast(2) brightness(0.7) hue-rotate(80deg);
 }
 
+/* Footer items list */
 .footer-list {
   list-style-type: none;
   height: 13rem;
@@ -444,6 +447,7 @@
   }
 }
 
+/* Logo & socials division */
 .item-1 {
   height: 100%;
   display: flex;
@@ -455,6 +459,7 @@
   }
 }
 
+/* Footer nav division */
 @media (min-width: 992px) {
   .item-2 {
     align-self: center;
@@ -462,6 +467,7 @@
   }
 }
 
+/* Request & copyright division */
 .item-3 {
   display: flex;
   flex-direction: column;
