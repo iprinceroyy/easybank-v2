@@ -10,13 +10,12 @@
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    @media (min-width: 992px) {
-        padding: 0.5rem 10rem;
-    }
+    padding-block: min(10vw, 1.5rem);
+    padding-inline: max(10vw, 1.5rem);
 }
 
 .nav-menu {
@@ -116,7 +115,7 @@
         flex-direction: row-reverse;
         background-image: url("../assets/images/bg-intro-desktop.svg");
         background-size: cover;
-        background-position: left 42.5vw top -45vh;
+        background-position: left 45vw top -45vh;
     }
 }
 
@@ -126,23 +125,22 @@
 .mockup img {
     object-position: right 0 top -19vh;
     @media (min-width: 992px) {
-        object-position: right -8vw top -17vh;
+        object-position: right -8vw top -13vh;
     }
 }
 
 .intro .title {
-    padding: 0 2rem;
+    padding-right: max(8vw, 2rem);
     text-align: center;
     @media (min-width: 992px) {
-        flex-basis: 40%;
-        //padding: 15rem 0;
-        padding: 8% 0;
+        flex-basis: 50%;
+        padding-top: min(10vw, 4rem);
         text-align: start;
     }
 }
 
 .title h1 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 2.73vw + 0.82rem, 3rem);
     font-weight: var.$fw-400;
     color: var.$dark-blue;
     letter-spacing: 1px;
