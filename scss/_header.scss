@@ -14,9 +14,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: min(10vw, 1.5rem);
+    padding-block: min(8vw, 1rem);
     padding-inline: max(10vw, 1.5rem);
+    position: relative;
+    z-index: 3;
 }
+
+
+/* Mobile Navigation menu */
 
 .nav-menu {
     position: fixed;
@@ -29,6 +34,7 @@
     align-items: center;
     background-color: rgba(#000, 0.3);
     transition: top 300ms ease-out 80ms;
+    /* Desktop view */
     @media (min-width: 992px) {
         position: relative;
         width: 0;
@@ -48,6 +54,9 @@
         display: none;
     }
 }
+
+
+/* Menu items list */
 
 .nav-list {
     height: 30vh;
@@ -72,14 +81,48 @@
 }
 
 .nav-menu .nav-links {
+    position: relative;
     color: var.$dark-blue;
     text-transform: capitalize;
     text-decoration: none;
+    text-align: center;
+    cursor: pointer;
     @media (min-width: 992px) {
         color: var.$grayish-blue;
-        padding: 0 1rem;
+        padding: 0 2rem;
+        bottom: 0.8rem;
     }
 }
+
+
+/* Link active states */
+
+.nav-links:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient( 135deg, var.$lime-green, var.$bright-cyan);
+    opacity: 0;
+    bottom: 0;
+    transform: translateY(-1rem);
+    transition: all 0.3s;
+    @media (min-width: 992px) {
+        width: 60%;
+    }
+}
+
+.nav-links:hover:before {
+    opacity: 1;
+    transform: translateY(2px);
+    @media (min-width: 992px) {
+        transform: translateY(1.5rem);
+    }
+}
+
+
+/* Request button */
 
 @mixin button-theme {
     font-size: 1rem;
@@ -96,6 +139,14 @@
         @include button-theme;
         display: block;
     }
+}
+
+
+/* Button active states */
+
+.navbar>button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .intro {
