@@ -20,7 +20,7 @@
 }
 
 .footer-section .logo img {
-    filter: brightness(0) invert(1);
+    filter: contrast(1) invert(1) hue-rotate(190deg) brightness(2);
 }
 
 .socials {
@@ -31,6 +31,10 @@
     justify-content: space-between;
     img {
         width: 1.8rem;
+        &:hover {
+            cursor: pointer;
+            filter: sepia(1) saturate(20) contrast(2) brightness(0.7) hue-rotate(80deg);
+        }
     }
 }
 
@@ -47,6 +51,9 @@
         color: var.$light-grayish-blue;
         text-decoration: none;
         text-transform: capitalize;
+        &:hover {
+            color: var.$lime-green;
+        }
     }
     @media (min-width: 992px) {
         align-items: stretch;
@@ -87,6 +94,12 @@
 .footer button {
     @include button-theme;
     margin: 2rem 0;
+    /* Footer button active states */
+    &:hover,
+    &:active {
+        cursor: pointer;
+        filter: contrast(1) hue-rotate(1deg) brightness(1.5);
+    }
 }
 
 .copyright p {

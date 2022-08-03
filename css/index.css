@@ -398,7 +398,7 @@
 }
 
 .footer-section .logo img {
-  filter: brightness(0) invert(1);
+  filter: contrast(1) invert(1) hue-rotate(190deg) brightness(2);
 }
 
 .socials {
@@ -410,6 +410,10 @@
 }
 .socials img {
   width: 1.8rem;
+}
+.socials img:hover {
+  cursor: pointer;
+  filter: sepia(1) saturate(20) contrast(2) brightness(0.7) hue-rotate(80deg);
 }
 
 .footer-list {
@@ -426,6 +430,9 @@
   color: #f3f4f6;
   text-decoration: none;
   text-transform: capitalize;
+}
+.footer-list a:hover {
+  color: #31d35c;
 }
 @media (min-width: 992px) {
   .footer-list {
@@ -465,6 +472,11 @@
   border-style: none;
   border-radius: 25px;
   margin: 2rem 0;
+  /* Footer button active states */
+}
+.footer button:hover, .footer button:active {
+  cursor: pointer;
+  filter: contrast(1) hue-rotate(1deg) brightness(1.5);
 }
 
 .copyright p {
