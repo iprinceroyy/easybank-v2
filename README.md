@@ -50,4 +50,4 @@ Users should be able to:
 
 ## Author
 
--   [Twitter](https://www.twitter.com/@prince_popups)
+-   Twitter - [@prince_popups](https://www.twitter.com/@prince_popups)
