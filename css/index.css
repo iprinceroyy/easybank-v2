@@ -235,7 +235,7 @@
   background-color: #f3f4f6;
 }
 .feature-section h2 {
-  font-size: 3rem;
+  font-size: clamp(2.81rem, -2.39vw + 3.41rem, 1.5rem);
   color: #2d314d;
   font-weight: 400;
   margin: 1rem 0;
@@ -361,6 +361,14 @@
   font-weight: 400;
   padding-right: 4%;
   margin: 0.5rem 0;
+}
+.blog blockquote h3:hover {
+  color: rgba(49, 211, 92, 0.7);
+  cursor: pointer;
+}
+.blog blockquote h3:active {
+  color: #31d35c;
+  cursor: pointer;
 }
 .blog blockquote p {
   font-size: 1rem;
