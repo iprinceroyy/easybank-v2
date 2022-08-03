@@ -205,4 +205,9 @@
 
 .intro button {
     @include button-theme;
+    &:hover,
+    &:active {
+        cursor: pointer;
+        opacity: 0.6;
+    }
 }

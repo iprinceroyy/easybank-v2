@@ -227,6 +227,10 @@
   border-style: none;
   border-radius: 25px;
 }
+.intro button:hover, .intro button:active {
+  cursor: pointer;
+  opacity: 0.6;
+}
 
 .feature-section {
   padding-top: 4rem;
