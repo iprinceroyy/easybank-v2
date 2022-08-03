@@ -26,10 +26,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: min(8vw, 1rem);
+  padding-block: min(15vw, 1.7rem);
   padding-inline: max(10vw, 1.5rem);
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 
 /* Mobile Navigation menu */
@@ -186,7 +186,7 @@
 
 /* intro image */
 .mockup img {
-  object-position: right 0 top -19vh;
+  object-position: right 0 top -17vh;
 }
 @media (min-width: 992px) {
   .mockup img {
